@@ -57,6 +57,19 @@
               He will burn one of the rope at both the ends and the second rope at one end. After half an hour, the first one burns completely and at this point of time, he will burn the other end of the second rope so now it will take 15 mins more to completely burn. so total time is 30+15 i.e. 45 mins.
           </p>
         </div>
+        
+        <button class="accordion"><b>Counterfeit Coins Puzzle</b><br>Lets say there are N bags each full of coins. Amongst these N bags there is 1 bag which contains nakli coins which are 1 gram heavier in weight than the original coins each of which have weight W. You also have a weighing machine available. The question is, what is the minimum number of weighings required to detect the bag with nakli coins?</button>
+        <div class="panel">
+          <p>
+              The answer is, with 1 weighing we can detect the bag with nakli coins.<br>
+              Place all the bags in a sequence. Now take out 1 coin from the first bag, 2 coins from the second bag, 3 coins from the third bag.... and N coins from the Nth bag. Collect all of these coins and weigh them on the weighing machine.
+              Expected weight in case none of the coins were nakli = N(N+1) * W <br>
+              Since there were some forged coins amongst the coins placed on the weighing machine, and the weight of nakli coins is 1 gm more than the original weight, therefore actual weight of all the coins kept on the weighing machine would be greater than N(N+1) * W. The difference between the actual weight and the expected weight divided by the weight of coin gives the bag that contains nakli coins. For example, <br>
+              Lets say there are 5 bags and weight of original coins is 10 gm each and the weight of nakli coins is 11 gm each. We place all the bags in sequence and pick out 1 coin from bag 1, 2 coins from bag 2, 3 coins from bag 3, 4 coins from bag 4, 5 coins from bag 5. <br>
+              Expected weight considering none of the coins are nakli = (1+2+3+4+5)*10 = 15 * 10 = 150 gms <br>
+              Now lets say the actual weight turns out to be 153 gms. Since the nakli coins were 1 gm heavier thann the original coins, it means that there are 3 nakli coins placed on the weighing machine. Now since 3 coins were taken out from bag 3, therefore bag 3 contains the nakli coins.
+          </p>
+        </div>
 
         <script>
         var acc = document.getElementsByClassName("accordion");
